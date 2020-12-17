@@ -1,0 +1,140 @@
+@media only screen and (max-width: 480px) {
+	.col { 
+        margin: 0;
+	}
+	.span-1-of-4 {
+		width: 100%; 
+	}
+	.card {
+		width: 100%; 
+    }
+    .span-2-of-3 {
+		width: 100%; 
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+	section { padding: 25px 0; }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+}
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%; 
+        margin: 0 0 4% 0;
+    }
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline; }
+
+    .main-nav {
+        float: left;
+        top: 0;
+        left: 0;
+        padding: 10px 0 0 10px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .merge-cell { font-size: 120%;}
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      /* clip: rect(0 0 0 0); */
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    .btnScroll {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .card {
+      display: inline-block;
+      margin: 0% 12.5%;
+      margin-top: 7%;
+      margin-bottom: 0;
+      width: 7%;
+    }
+  }

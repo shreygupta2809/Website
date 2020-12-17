@@ -1,0 +1,380 @@
+/*-------------------------------------*/
+/*Basic Setup*/
+/*-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/*-------------------------------------*/
+/*Reusable Components*/
+/*-------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*---------HEADINGS----------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #fc0e41e7;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*---------PARAGRAPHS----------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    text-align: justify;
+    line-height: 145%;
+}
+
+/*---------BUTTONS----------*/
+
+.btnScroll {
+    font-size: 175%;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fc0e41e7;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    display: none;
+}
+
+.btnScroll:hover {
+    background-color: #b40a2fe7;
+}
+
+/*---------LINKS----------*/
+a:link,
+a:visited {
+    color: #fc0e41e7;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #fc0e41e7;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/*-------------------------------------*/
+/*Photo*/
+/*-------------------------------------*/
+
+.section-photo {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 14, 65, 0.300)), to(rgba(252, 14, 65, 0.300)), url("https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg"));
+    background-image: linear-gradient(rgba(252, 14, 65, 0.300), rgba(252, 14, 65, 0.300)), url("https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    font-size: 300%;
+} 
+
+/*Main Navi*/
+
+.main-nav {
+    width: 100%;
+    top: 0;
+    list-style: none;
+    left: 0;
+    padding: 15px 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, background-color 0.2s;
+    transition: border-bottom 0.2s, background-color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #000;
+}
+
+.mobile-nav-icon {
+    top: 0;
+    left: 0;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    display: none;
+}
+
+/*-------------------------------------*/
+/*ABOUT ME*/
+/*-------------------------------------*/
+
+.section-about .long-copy {
+    margin-bottom: 30px;
+}
+
+.box h3 {
+    color: #fc0e41e7;
+    text-align: center;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } 
+
+.span-1-of-4 {
+	width: 23.8%; 
+}
+
+/*-------------------------------------*/
+/*CONTACT*/
+/*-------------------------------------*/
+
+.section-contact {
+    /* background-color: #f7f7f7; */
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.card {
+    display: inline-block;
+    margin: 0% 14%;
+    margin-top: 6%;
+    margin-bottom: 0;
+	width: 5%;
+}
+
+.row a:link,
+.row a:visited{
+    border-bottom: none;
+}
+
+
+/*-------------------------------------*/
+/*FORM*/
+/*-------------------------------------*/
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {outline: none;}
+
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #fc0e41e7;
+    border: 1px solid #fc0e41e7;
+    color: #fff;
+    margin-right: 15px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #b40a2fe7;
+}
+
+/*-------------------------------------*/
+/*TABLE*/
+/*-------------------------------------*/
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .merge-cell{
+    font-size: 150%;
+    margin-bottom: 0;
+    font-weight: 400;
+ }
+
+/*-------------------------------------*/
+/*SLIDE*/
+/*-------------------------------------*/
+
+.slide {
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-image: no-repeat;
+}
+
+/*-------------------------------------*/
+/*VISITOR COUNT*/
+/*-------------------------------------*/
+
+.section-visitor {
+    background-color: rgb(250, 236, 242);
+    padding: 40px 0;
+}
+
+.text h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 350%;
+    text-align: center;
+    letter-spacing: 1px;
+}
